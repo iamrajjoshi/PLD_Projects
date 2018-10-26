@@ -1,0 +1,67 @@
+%SIGNAL
+PIN   2 =  A 
+PIN   3 =  B 
+PIN   4 =  C 
+PIN  23 =  D 
+PIN  22 =  E 
+PIN  21 =  F 
+PIN  20 =  G 
+PIN  19 =  H 
+PIN  18 =  I 
+PIN  17 =  J 
+PIN  16 =  K 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+D =>
+    !A & !B & !C
+
+E =>
+    !A & !B & C
+
+F =>
+    !A & B & !C
+
+G =>
+    !A & B & C
+
+H =>
+    A & !B & !C
+
+I =>
+    A & !B & C
+
+J =>
+    A & B & !C
+
+K =>
+    A & B & C
+
+D.oe  =>
+    1 
+
+E.oe  =>
+    1 
+
+F.oe  =>
+    1 
+
+G.oe  =>
+    1 
+
+H.oe  =>
+    1 
+
+I.oe  =>
+    1 
+
+J.oe  =>
+    1 
+
+K.oe  =>
+    1 
+
+%END

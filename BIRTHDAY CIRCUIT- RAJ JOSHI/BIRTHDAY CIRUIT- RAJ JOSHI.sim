@@ -1,0 +1,48 @@
+%SIGNAL
+PIN  14 =  A 
+PIN  15 =  B 
+PIN  16 =  C 
+PIN  17 =  D 
+PIN  18 =  E 
+PIN  19 =  F 
+PIN  20 =  G 
+PIN   2 =  X 
+PIN   3 =  Y 
+PIN   4 =  Z 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+A =>
+    !X & Y & !Z
+  # X & !Y & Z
+
+B =>
+    !X & Y & !Z
+  # X & !Y & Z
+
+C =>
+    !X & Y
+  # !X & Z
+  # X & !Y
+
+D =>
+    !X & Y & !Z
+  # X & !Y & Z
+
+E =>
+    !X & Y & !Z
+  # X & Z
+
+F =>
+    !X & Y
+  # X & !Y
+  # Z
+
+G =>
+    !X & !Y & !Z
+  # X & Y & !Z
+
+%END

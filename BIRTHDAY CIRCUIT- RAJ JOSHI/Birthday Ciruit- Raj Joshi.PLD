@@ -1,0 +1,34 @@
+Name     Birthday Circuit- Raj Joshi ;
+PartNo   00 ;
+Date     10/11/2017 ;
+Revision 01 ;
+Designer Engineer ;
+Company  MCVTS ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/* *************** INPUT PINS *********************/
+PIN    2 = X                ; /* X is MSB                                 */ 
+PIN    3 = Y                ; /*                                 */ 
+PIN    4 = Z                ; /* Z is LSB                                */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN    14 = A                         ; /*                                 */ 
+PIN    15 = B                        ; /*                                 */ 
+PIN    16 = C                        ; /*                                 */ 
+PIN    17 = D                        ; /*                                 */ 
+PIN    18 = E                        ; /*                                 */ 
+PIN    19 = F                        ; /*                                 */ 
+PIN    20 = G                        ; /*                                 */ 
+
+A = !X & Y & !Z # X & !Y & Z;
+B = !X & Y & !Z # X & !Y & Z;
+C = !X & Y # !X & Z # X & !Y;
+D = !X & Y & !Z # X & !Y & Z;
+E = !X & Y & !Z # X & Z;
+F = !X & Y # X & !Y # Z;
+G = !X & !Y & !Z # X & Y & !Z;	
+
+
+

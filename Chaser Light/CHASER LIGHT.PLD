@@ -1,0 +1,35 @@
+Name     Chaser Light ;
+PartNo   00 ;
+Date     10/17/2018 ;
+Revision 01 ;
+Designer Engineer ;
+Company  MCVTS ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/* *************** INPUT PINS *********************/
+PIN   2 = A                         ; /*                                 */ 
+PIN   3 = B                        ; /*                                 */ 
+PIN   4 = C                        ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN   23 = D                          ; /*                                 */ 
+PIN   22 = E                         ; /*                                 */ 
+PIN   21 = F                         ; /*                                 */ 
+PIN   20 = G                         ; /*                                 */ 
+PIN   19 = H                         ; /*                                 */ 
+PIN   18 = I                         ; /*                                 */ 
+PIN   17 = J                         ; /*                                 */ 
+PIN   16 = K                         ; /*                                 */ 
+
+D = !A & !B & !C;
+E = !A & !B & C;
+F = !A & B & !C;
+G = !A & B & C;
+H = A & !B & !C;
+I = A & !B & C;
+J = A & B & !C;
+K = A & B & C;
+
+
