@@ -1,0 +1,73 @@
+Name     Toll Booth_rev3;
+PartNo   00;
+Date     1/24/2019;
+Revision 03;
+Designer Raj Joshi;
+Company  MCVTS;
+Assembly None;
+Location pld;
+Device   g22v10 ;
+
+/* *************** INPUT PINS *********************/
+PIN 1 = clk; /* Clock */ 
+PIN 2 = dime_in; /* Dime Input */
+PIN 3 = nickel_in; /* Nickel Input */ 
+PIN 4 = reset_in; /* Reset Input */ 
+PIN 5 = r; /* Reset Flip Flops */
+PIN 6 = s; /* Set Flip Flops */
+
+
+/* *************** OUTPUT PINS *********************/
+PIN 16 = go; /* Green Light */
+PIN 17 = stop; /* Red Light */
+PIN 18 = tens; /* Tens - 7-segment */ 
+PIN 19 = ones; /* Ones 7-segment */
+
+go.ar = r;
+stop.ar = r;
+tens.ar = r;
+ones.ar = r;
+
+go.sp = s;
+stop.sp = s;
+tens.sp = s;
+ones.sp = s;
+
+
+field count = [go, stop, tens, ones];
+$define S0 'b'0000 /* Initial State */
+$define S1 'b'0100 /* No Input */
+$define S2 'b'0101 /* one nickel*/
+$define S3 'b'0110 /* one dime or 2 nickels */
+$define S4 'b'1011 /* 15 cents */
+
+field mode = [reset_in, dime_in, nickel_in];
+hold = mode:0; /* 000 */
+up = mode:1; /* 001 */
+upup = mode:2; /* 010 */
+all = mode:3; /* 011 */
+clear = mode:[4..7]; /* 100..101 */
+
+sequence count {
+present S0 next S1;
+present S1 if clear next S1;
+		if up next S2;
+		if upup next S3;
+		if hold next S1;
+		if all next S4;
+present S2 if clear next S1;
+		if up next S3;
+		if upup next S4;
+		if hold next S2;
+		if all next S4;
+present S3 if clear next S1;
+		if up next S4;
+		if upup next S4;
+		if hold next S3;
+		if all next S4;
+present S4 if clear next S1;
+		if up next S4;
+		if upup next S4;
+		if hold next S4;
+		if all next S4;
+}

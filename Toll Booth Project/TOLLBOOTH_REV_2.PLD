@@ -1,0 +1,52 @@
+Name     NAME ;
+PartNo   00 ;
+Date     1/20/2016 ;
+Revision 01 ;
+Designer Engineer ;
+Company  MCVTS ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/* *************** INPUT PINS *********************/
+Pin 1 = clk;
+Pin 2 = n;
+Pin 3 = d;
+Pin 4 = r;
+Pin 5 = s;
+/* *************** OUTPUT PINS *********************/
+
+Pin [16..19] = [Q9..0];
+
+Field tollOut = [Q9..0];
+
+
+Q9.AR = r;
+Q9.SP = s;
+/* * States * */
+
+$define INIT 'b'1111111111
+$define S0 'b'1000000000 /* * 00 * */
+$define S1 'b'1000000101 /* * 05 * */
+$define S2 'b'1000010000 /* * 10 * */
+$define S3 'b'0100010101 /* * 15 * */
+
+Sequence tollOut {
+	present INIT next S0;
+	present S0 if n next S1;
+		if d next S2;
+		if r next S0;
+	present S1 if n next S2;
+		if d next S3;
+		if r next S0;
+	present S2 if n next S3;
+		if d next S3;
+		if r next S0;
+	present S3 if n next S3;
+		if d next S3;
+		if r next S0;
+
+}
+
+
+

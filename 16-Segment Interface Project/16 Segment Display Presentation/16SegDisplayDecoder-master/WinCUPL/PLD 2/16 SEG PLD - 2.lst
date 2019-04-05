@@ -1,0 +1,270 @@
+LISTING FOR LOGIC DESCRIPTION FILE: 16 SEG PLD - 2.pld               Page 1
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Fri Nov 02 11:07:16 2018
+
+  1:Name     16 Seg PLD - 2 ;
+  2:PartNo   00 ;
+  3:Date     11/14/2017 ;
+  4:Revision 01 ;
+  5:Designer Engineer ;
+  6:Company  vidyadharan inc ;
+  7:Assembly None ;
+  8:Location  ;
+  9:Device   g22v10 ;
+ 10:
+ 11:/* *************** INPUT PINS *********************/
+ 12:PIN   2  =   I5                      ; /*                                 */ 
+ 13:PIN   3  =   I4                      ; /*                                 */ 
+ 14:PIN   4  =   I3                      ; /*                                 */ 
+ 15:PIN   5  =   I2                      ; /*                                 */ 
+ 16:PIN   6  =   I1                      ; /*                                 */ 
+ 17:PIN   7  =   I0                      ; /*                                 */
+ 18:
+ 19:/* *************** OUTPUT PINS *********************/
+ 20:PIN  22   =   d1                              ; /*                                 */ 
+ 21:PIN  21   =   c                      ; /*                                 */ 
+ 22:PIN  20   =   l                      ; /*                                 */ 
+ 23:PIN  19   =   m                     ; /*                                 */ 
+ 24:PIN  18   =   n                      ; /*                                 */ 
+ 25:PIN  17   =   d2                      ; /*                                 */ 
+ 26:PIN  16   =   g1                      ; /*                                 */ 
+ 27:PIN  15   =   e
+ 28:                      ; /*                                 */ 
+ 29:
+ 30:
+ 31:
+ 32:g1 =
+ 33:!I5 & !I4 & !I3 & !I2 & !I1 & !I0 #
+ 34:!I5 & !I4 & !I3 & !I2 & I1 & !I0 #
+ 35:!I5 & !I4 & !I3 & !I2 & I1 & I0 #
+ 36:!I5 & !I4 & !I3 & I2 & !I1 & !I0 #
+ 37:!I5 & !I4 & !I3 & I2 & I1 & I0 #
+ 38:!I5 & !I4 & I3 & !I2 & !I1 & I0 #
+ 39:!I5 & !I4 & I3 & !I2 & I1 & !I0 #
+ 40:!I5 & !I4 & I3 & I2 & !I1 & !I0 #
+ 41:!I5 & !I4 & I3 & I2 & !I1 & I0 #
+ 42:!I5 & !I4 & I3 & I2 & I1 & !I0 #
+ 43:!I5 & !I4 & I3 & I2 & I1 & I0 #
+ 44:!I5 & I4 & !I3 & !I2 & !I1 & I0 #
+ 45:!I5 & I4 & !I3 & I2 & !I1 & !I0 #
+ 46:!I5 & I4 & !I3 & I2 & !I1 & I0 #
+ 47:!I5 & I4 & !I3 & I2 & I1 & !I0 #
+ 48:!I5 & I4 & !I3 & I2 & I1 & I0 #
+ 49:!I5 & I4 & I3 & !I2 & !I1 & !I0 #
+ 50:!I5 & I4 & I3 & !I2 & !I1 & I0 #
+ 51:!I5 & I4 & I3 & !I2 & I1 & !I0 #
+ 52:!I5 & I4 & I3 & !I2 & I1 & I0 #
+ 53:!I5 & I4 & I3 & I2 & !I1 & !I0 #
+
+LISTING FOR LOGIC DESCRIPTION FILE: 16 SEG PLD - 2.pld               Page 2
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Fri Nov 02 11:07:16 2018
+
+ 54:!I5 & I4 & I3 & I2 & I1 & !I0 #
+ 55:I5 & !I4 & !I3 & !I2 & I1 & !I0;
+ 56:d1 =
+ 57:!I5 & !I4 & !I3 & !I2 & !I1 & !I0 #
+ 58:!I5 & !I4 & !I3 & !I2 & !I1 & I0 #
+ 59:!I5 & !I4 & !I3 & I2 & I1 & !I0 #
+ 60:!I5 & !I4 & I3 & !I2 & !I1 & !I0 #
+ 61:!I5 & !I4 & I3 & !I2 & I1 & I0 #
+ 62:!I5 & !I4 & I3 & I2 & !I1 & I0 #
+ 63:!I5 & !I4 & I3 & I2 & I1 & !I0 #
+ 64:!I5 & I4 & !I3 & !I2 & !I1 & !I0 #
+ 65:!I5 & I4 & !I3 & !I2 & I1 & !I0 #
+ 66:!I5 & I4 & !I3 & I2 & !I1 & !I0 #
+ 67:!I5 & I4 & !I3 & I2 & I1 & !I0 #
+ 68:!I5 & I4 & !I3 & I2 & I1 & I0 #
+ 69:!I5 & I4 & I3 & !I2 & !I1 & !I0 #
+ 70:!I5 & I4 & I3 & !I2 & !I1 & I0 #
+ 71:!I5 & I4 & I3 & I2 & !I1 & !I0 #
+ 72:!I5 & I4 & I3 & I2 & I1 & I0 #
+ 73:I5 & !I4 & !I3 & !I2 & I1 & !I0;
+ 74:d2 =
+ 75:!I5 & !I4 & !I3 & !I2 & !I1 & !I0 #
+ 76:!I5 & !I4 & !I3 & !I2 & !I1 & I0 #
+ 77:!I5 & !I4 & !I3 & I2 & I1 & !I0 #
+ 78:!I5 & !I4 & I3 & !I2 & !I1 & !I0 #
+ 79:!I5 & !I4 & I3 & !I2 & I1 & I0 #
+ 80:!I5 & !I4 & I3 & I2 & !I1 & I0 #
+ 81:!I5 & !I4 & I3 & I2 & I1 & !I0 #
+ 82:!I5 & I4 & !I3 & !I2 & !I1 & !I0 #
+ 83:!I5 & I4 & !I3 & !I2 & I1 & !I0 #
+ 84:!I5 & I4 & !I3 & I2 & !I1 & !I0 #
+ 85:!I5 & I4 & !I3 & I2 & I1 & !I0 #
+ 86:!I5 & I4 & !I3 & I2 & I1 & I0 #
+ 87:!I5 & I4 & I3 & !I2 & !I1 & !I0 #
+ 88:!I5 & I4 & I3 & !I2 & !I1 & I0 #
+ 89:!I5 & I4 & I3 & I2 & !I1 & !I0 #
+ 90:!I5 & I4 & I3 & I2 & I1 & I0 #
+ 91:I5 & !I4 & !I3 & !I2 & I1 & !I0;
+ 92:l =
+ 93:!I5 & !I4 & !I3 & !I2 & !I1 & !I0 #
+ 94:!I5 & !I4 & !I3 & !I2 & !I1 & I0 #
+ 95:!I5 & !I4 & !I3 & !I2 & I1 & !I0 #
+ 96:!I5 & !I4 & !I3 & !I2 & I1 & I0 #
+ 97:!I5 & !I4 & !I3 & I2 & !I1 & !I0 #
+ 98:!I5 & !I4 & !I3 & I2 & !I1 & I0 #
+ 99:!I5 & !I4 & !I3 & I2 & I1 & !I0 #
+100:!I5 & !I4 & !I3 & I2 & I1 & I0 #
+101:!I5 & !I4 & I3 & !I2 & !I1 & !I0 #
+102:!I5 & !I4 & I3 & !I2 & !I1 & I0 #
+103:!I5 & !I4 & I3 & !I2 & I1 & !I0 #
+104:!I5 & !I4 & I3 & I2 & !I1 & !I0 #
+105:!I5 & !I4 & I3 & I2 & !I1 & I0 #
+106:!I5 & !I4 & I3 & I2 & I1 & I0 #
+107:!I5 & I4 & !I3 & !I2 & !I1 & !I0 #
+
+LISTING FOR LOGIC DESCRIPTION FILE: 16 SEG PLD - 2.pld               Page 3
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Fri Nov 02 11:07:16 2018
+
+108:!I5 & I4 & !I3 & !I2 & I1 & I0 #
+109:!I5 & I4 & !I3 & I2 & !I1 & !I0 #
+110:!I5 & I4 & !I3 & I2 & !I1 & I0 #
+111:!I5 & I4 & !I3 & I2 & I1 & !I0 #
+112:!I5 & I4 & I3 & !I2 & !I1 & I0 #
+113:!I5 & I4 & I3 & !I2 & I1 & !I0 #
+114:!I5 & I4 & I3 & !I2 & I1 & I0 #
+115:!I5 & I4 & I3 & I2 & !I1 & !I0 #
+116:!I5 & I4 & I3 & I2 & !I1 & I0 #
+117:!I5 & I4 & I3 & I2 & I1 & !I0 #
+118:!I5 & I4 & I3 & I2 & I1 & I0 #
+119:I5 & !I4 & !I3 & !I2 & !I1 & I0 #
+120:I5 & !I4 & !I3 & !I2 & I1 & !I0 #
+121:I5 & !I4 & !I3 & !I2 & I1 & I0 #
+122:I5 & !I4 & !I3 & I2 & !I1 & !I0;
+123:m =
+124:!I5 & !I4 & !I3 & !I2 & !I1 & !I0 #
+125:!I5 & !I4 & !I3 & !I2 & !I1 & I0 #
+126:!I5 & !I4 & !I3 & !I2 & I1 & I0 #
+127:!I5 & !I4 & !I3 & I2 & !I1 & I0 #
+128:!I5 & !I4 & !I3 & I2 & I1 & !I0 #
+129:!I5 & !I4 & !I3 & I2 & I1 & I0 #
+130:!I5 & !I4 & I3 & !I2 & !I1 & !I0 #
+131:!I5 & !I4 & I3 & !I2 & I1 & !I0 #
+132:!I5 & !I4 & I3 & !I2 & I1 & I0 #
+133:!I5 & !I4 & I3 & I2 & !I1 & !I0 #
+134:!I5 & !I4 & I3 & I2 & !I1 & I0 #
+135:!I5 & !I4 & I3 & I2 & I1 & !I0 #
+136:!I5 & !I4 & I3 & I2 & I1 & I0 #
+137:!I5 & I4 & !I3 & !I2 & !I1 & !I0 #
+138:!I5 & I4 & !I3 & !I2 & !I1 & I0 #
+139:!I5 & I4 & !I3 & !I2 & I1 & !I0 #
+140:!I5 & I4 & !I3 & !I2 & I1 & I0 #
+141:!I5 & I4 & !I3 & I2 & !I1 & I0 #
+142:!I5 & I4 & !I3 & I2 & I1 & !I0 #
+143:!I5 & I4 & !I3 & I2 & I1 & I0 #
+144:!I5 & I4 & I3 & !I2 & !I1 & !I0 #
+145:!I5 & I4 & I3 & !I2 & I1 & !I0 #
+146:!I5 & I4 & I3 & !I2 & I1 & I0 #
+147:!I5 & I4 & I3 & I2 & !I1 & I0 #
+148:!I5 & I4 & I3 & I2 & I1 & !I0 #
+149:!I5 & I4 & I3 & I2 & I1 & I0 #
+150:I5 & !I4 & !I3 & !I2 & !I1 & !I0 #
+151:I5 & !I4 & !I3 & !I2 & !I1 & I0 #
+152:I5 & !I4 & !I3 & !I2 & I1 & !I0 #
+153:I5 & !I4 & !I3 & !I2 & I1 & I0 #
+154:I5 & !I4 & !I3 & I2 & !I1 & !I0;
+155:n =
+156:!I5 & !I4 & !I3 & !I2 & !I1 & !I0 #
+157:!I5 & !I4 & !I3 & !I2 & !I1 & I0 #
+158:!I5 & !I4 & !I3 & !I2 & I1 & !I0 #
+159:!I5 & !I4 & !I3 & !I2 & I1 & I0 #
+160:!I5 & !I4 & !I3 & I2 & !I1 & !I0 #
+161:!I5 & !I4 & !I3 & I2 & !I1 & I0 #
+
+LISTING FOR LOGIC DESCRIPTION FILE: 16 SEG PLD - 2.pld               Page 4
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Fri Nov 02 11:07:16 2018
+
+162:!I5 & !I4 & !I3 & I2 & I1 & !I0 #
+163:!I5 & !I4 & !I3 & I2 & I1 & I0 #
+164:!I5 & !I4 & I3 & !I2 & !I1 & !I0 #
+165:!I5 & !I4 & I3 & !I2 & !I1 & I0 #
+166:!I5 & !I4 & I3 & !I2 & I1 & !I0 #
+167:!I5 & !I4 & I3 & !I2 & I1 & I0 #
+168:!I5 & !I4 & I3 & I2 & !I1 & !I0 #
+169:!I5 & !I4 & I3 & I2 & !I1 & I0 #
+170:!I5 & !I4 & I3 & I2 & I1 & !I0 #
+171:!I5 & !I4 & I3 & I2 & I1 & I0 #
+172:!I5 & I4 & !I3 & !I2 & !I1 & !I0 #
+173:!I5 & I4 & !I3 & !I2 & !I1 & I0 #
+174:!I5 & I4 & !I3 & !I2 & I1 & !I0 #
+175:!I5 & I4 & !I3 & !I2 & I1 & I0 #
+176:!I5 & I4 & !I3 & I2 & !I1 & !I0 #
+177:!I5 & I4 & !I3 & I2 & !I1 & I0 #
+178:!I5 & I4 & I3 & !I2 & !I1 & I0 #
+179:!I5 & I4 & I3 & I2 & !I1 & !I0 #
+180:!I5 & I4 & I3 & I2 & !I1 & I0 #
+181:!I5 & I4 & I3 & I2 & I1 & !I0 #
+182:!I5 & I4 & I3 & I2 & I1 & I0 #
+183:I5 & !I4 & !I3 & !I2 & !I1 & !I0 #
+184:I5 & !I4 & !I3 & !I2 & !I1 & I0 #
+185:I5 & !I4 & !I3 & !I2 & I1 & !I0 #
+186:I5 & !I4 & !I3 & !I2 & I1 & I0 #
+187:I5 & !I4 & !I3 & I2 & !I1 & !I0;
+188:e =
+189:!I5 & !I4 & !I3 & !I2 & !I1 & !I0 #
+190:!I5 & !I4 & !I3 & !I2 & I1 & !I0 #
+191:!I5 & !I4 & !I3 & I2 & !I1 & !I0 #
+192:!I5 & !I4 & I3 & !I2 & !I1 & I0 #
+193:!I5 & I4 & !I3 & !I2 & I1 & I0 #
+194:!I5 & I4 & !I3 & I2 & !I1 & !I0 #
+195:!I5 & I4 & I3 & !I2 & !I1 & !I0 #
+196:!I5 & I4 & I3 & !I2 & !I1 & I0 #
+197:!I5 & I4 & I3 & !I2 & I1 & !I0 #
+198:!I5 & I4 & I3 & I2 & !I1 & !I0 #
+199:!I5 & I4 & I3 & I2 & I1 & !I0 #
+200:!I5 & I4 & I3 & I2 & I1 & I0 #
+201:I5 & !I4 & !I3 & !I2 & !I1 & !I0 #
+202:I5 & !I4 & !I3 & !I2 & I1 & !I0 #
+203:I5 & !I4 & !I3 & I2 & !I1 & !I0;
+204:c =
+205:!I5 & !I4 & !I3 & !I2 & !I1 & !I0 #
+206:!I5 & !I4 & !I3 & !I2 & I1 & I0 #
+207:!I5 & !I4 & !I3 & I2 & !I1 & I0 #
+208:!I5 & !I4 & !I3 & I2 & I1 & !I0 #
+209:!I5 & !I4 & I3 & !I2 & !I1 & I0 #
+210:!I5 & !I4 & I3 & !I2 & I1 & I0 #
+211:!I5 & !I4 & I3 & I2 & !I1 & !I0 #
+212:!I5 & I4 & !I3 & !I2 & !I1 & !I0 #
+213:!I5 & I4 & !I3 & !I2 & I1 & !I0 #
+214:!I5 & I4 & !I3 & I2 & !I1 & !I0 #
+215:!I5 & I4 & !I3 & I2 & I1 & !I0 #
+
+LISTING FOR LOGIC DESCRIPTION FILE: 16 SEG PLD - 2.pld               Page 5
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Fri Nov 02 11:07:16 2018
+
+216:!I5 & I4 & I3 & !I2 & !I1 & !I0 #
+217:!I5 & I4 & I3 & !I2 & !I1 & I0 #
+218:!I5 & I4 & I3 & !I2 & I1 & !I0 #
+219:!I5 & I4 & I3 & I2 & !I1 & !I0 #
+220:!I5 & I4 & I3 & I2 & !I1 & I0 #
+221:I5 & !I4 & !I3 & !I2 & !I1 & !I0;
+222:
+223:
+224:
+225:
+226:
+
+
+
+Jedec Fuse Checksum       (b2c4)
+Jedec Transmit Checksum   (09d5)

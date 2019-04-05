@@ -1,0 +1,79 @@
+Name     tollbooth_rev_1 ;
+PartNo   00 ;
+Date     1/16/2019 ;
+Revision 01 ;
+Designer Engineer ;
+Company  MCVTS ;
+Assembly None ;
+Location  ;
+Device   g22v10 ;
+
+/* *************** INPUT PINS *********************/
+Pin 1 = clk;
+Pin 2 = n;
+Pin 3 = d;
+Pin 4 = r;
+/* *************** OUTPUT PINS *********************/
+
+Pin [23..14] = [Q9..0];
+
+Field tollOut = [Q9..0];
+Q9.OE = 'b'1;
+Q8.OE = 'b'1;
+Q7.OE = 'b'1;
+Q6.OE = 'b'1;
+Q5.OE = 'b'1;
+Q4.OE = 'b'1;
+Q3.OE = 'b'1;
+Q2.OE = 'b'1;
+Q1.OE = 'b'1;
+Q0.OE = 'b'1;
+
+Q9.AR = 'b'0;
+Q8.AR = 'b'0;
+Q7.AR = 'b'0;
+Q6.AR = 'b'0;
+Q5.AR = 'b'0;
+Q4.AR = 'b'0;
+Q3.AR = 'b'0;
+Q2.AR = 'b'0;
+Q1.AR = 'b'0;
+Q0.AR = 'b'0;
+
+Q9.SP = 'b'0;
+Q8.SP = 'b'0;
+Q7.SP = 'b'0;
+Q6.SP = 'b'0;
+Q5.SP = 'b'0;
+Q4.SP = 'b'0;
+Q3.SP = 'b'0;
+Q2.SP = 'b'0;
+Q1.SP = 'b'0;
+Q0.SP = 'b'0;
+/* * States * */
+
+$define INIT 'b'1111111111
+$define S0 'b'1000000000 /* * 00 * */
+$define S1 'b'1000000101 /* * 05 * */
+$define S2 'b'1000010000 /* * 10 * */
+$define S3 'b'0100010101 /* * 15 * */
+
+Sequence tollOut {
+	present INIT next S0;
+	present S0 if n next S1;
+		if d next S2;
+		if r next S0;
+	present S1 if n next S2;
+		if d next S3;
+		if r next S0;
+	present S2 if n next S3;
+		if d next S3;
+		if r next S0;
+	present S3 if n next S3;
+		if d next S3;
+		if r next S0;
+
+}
+
+
+

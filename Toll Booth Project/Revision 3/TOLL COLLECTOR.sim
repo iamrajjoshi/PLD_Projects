@@ -1,0 +1,95 @@
+%SIGNAL
+PIN   1 =  clk 
+PIN   2 =  dime_in 
+PIN  16 =  go 
+PIN   3 =  nickel_in 
+PIN  19 =  ones 
+PIN   5 =  r 
+PIN   4 =  reset_in 
+PIN   6 =  s 
+PIN  17 =  stop 
+PIN  18 =  tens 
+%END
+
+%FIELD
+FIELD count = go,stop,tens,ones
+FIELD mode = reset_in,dime_in,nickel_in
+%END
+
+%EQUATION
+all =>
+    dime_in & nickel_in & !reset_in
+
+clear =>
+    reset_in
+
+go.d  =>
+    !go & !ones & !reset_in & stop & !tens
+  # dime_in & go & nickel_in & !reset_in & !stop & tens
+  # dime_in & go & !nickel_in & !ones & !reset_in & !stop & tens
+  # go & nickel_in & ones & !reset_in & !stop & !tens
+  # dime_in & go & !nickel_in & ones & !reset_in & !stop & !tens
+
+go.ar ones.ar stop.ar tens.ar  =>
+    r
+
+go.sp ones.sp stop.sp tens.sp  =>
+    s
+
+hold =>
+    !dime_in & !nickel_in & !reset_in
+
+ones.d  =>
+    !go & !ones & !reset_in & stop & !tens
+  # dime_in & go & !nickel_in & ones & !reset_in & !stop & !tens
+  # go & !nickel_in & !ones & !reset_in & !stop & tens
+  # dime_in & go & nickel_in & !ones & !reset_in & !stop & tens
+  # go & nickel_in & ones & !reset_in & !stop
+
+ones.ar  =>
+    
+ones.sp  =>
+    
+stop.d  =>
+    go & ones & stop & tens
+  # go & reset_in & !stop & tens
+  # !go & !ones & reset_in & stop & !tens
+  # dime_in & go & !nickel_in & ones & !reset_in & !stop & tens
+  # !dime_in & go & !nickel_in & ones & !reset_in & !stop & !tens
+  # !dime_in & go & !reset_in & !stop & tens
+  # go & ones & reset_in & !stop & !tens
+
+stop.ar  =>
+    
+stop.sp  =>
+    
+tens.d  =>
+    !go & !ones & !reset_in & stop & !tens
+  # dime_in & go & ones & !reset_in & !stop
+  # go & nickel_in & !ones & !reset_in & !stop & tens
+  # dime_in & go & !nickel_in & !ones & !reset_in & !stop & tens
+  # !dime_in & go & ones & !reset_in & !stop & !tens
+
+tens.ar  =>
+    
+tens.sp  =>
+    
+up =>
+    !dime_in & nickel_in & !reset_in
+
+upup =>
+    dime_in & !nickel_in & !reset_in
+
+go.oe  =>
+    1 
+
+ones.oe  =>
+    1 
+
+stop.oe  =>
+    1 
+
+tens.oe  =>
+    1 
+
+%END

@@ -1,0 +1,11 @@
+1 clk
+2 n
+3 d
+4 r
+
+out 
+
+23 r \led
+22 g led
+21 a is lsb
+on and

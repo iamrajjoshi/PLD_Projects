@@ -1,0 +1,358 @@
+
+*******************************************************************************
+                                      16
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g22v10  Library DLIB-h-40-1
+Created         Wed Nov 15 11:36:01 2017
+Name            16 Seg PLD - 2 
+Partno          00 
+Revision        01 
+Date            11/14/2017 
+Designer        Engineer 
+Company         vidyadharan inc 
+Assembly        None 
+Location        
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+c =>
+    !I0 & !I1 & !I2 & !I3 & !I5
+  # I0 & I1 & !I2 & !I4 & !I5
+  # I0 & !I1 & I2 & !I3 & !I4 & !I5
+  # !I0 & I1 & I2 & !I3 & !I5
+  # I0 & !I1 & !I2 & I3 & !I5
+  # !I0 & !I1 & I2 & I3 & !I5
+  # !I0 & I1 & !I2 & I4 & !I5
+  # !I0 & !I1 & I2 & !I3 & I4 & !I5
+  # !I0 & !I1 & !I2 & I3 & I4 & !I5
+  # I0 & !I1 & I2 & I3 & I4 & !I5
+  # !I0 & !I1 & !I2 & !I3 & !I4 & I5
+
+d1 =>
+    !I1 & !I2 & !I3 & !I4 & !I5
+  # !I0 & I1 & I2 & !I4 & !I5
+  # !I0 & !I1 & !I2 & I3 & !I5
+  # I0 & I1 & !I2 & I3 & !I4 & !I5
+  # I0 & !I1 & I2 & I3 & !I4 & !I5
+  # !I0 & I1 & !I2 & !I3 & !I4 & I5
+  # !I0 & !I3 & I4 & !I5
+  # I0 & I1 & I2 & I4 & !I5
+  # I0 & !I1 & !I2 & I3 & I4 & !I5
+  # !I0 & !I1 & I2 & I3 & I4 & !I5
+
+d2 =>
+    !I1 & !I2 & !I3 & !I4 & !I5
+  # !I0 & I1 & I2 & !I4 & !I5
+  # !I0 & !I1 & !I2 & I3 & !I5
+  # I0 & I1 & !I2 & I3 & !I4 & !I5
+  # I0 & !I1 & I2 & I3 & !I4 & !I5
+  # !I0 & I1 & !I2 & !I3 & !I4 & I5
+  # !I0 & !I3 & I4 & !I5
+  # I0 & I1 & I2 & I4 & !I5
+  # I0 & !I1 & !I2 & I3 & I4 & !I5
+  # !I0 & !I1 & I2 & I3 & I4 & !I5
+
+e =>
+    !I0 & !I1 & I2 & !I3 & !I4 & I5
+  # !I0 & !I1 & I2 & !I3 & !I5
+  # I0 & !I1 & !I2 & I3 & !I5
+  # I0 & I1 & !I2 & !I3 & I4 & !I5
+  # !I0 & !I2 & !I3 & !I4
+  # !I0 & I3 & I4 & !I5
+  # I0 & I1 & I2 & I3 & I4 & !I5
+
+g1 =>
+    !I0 & !I2 & !I3 & !I4 & !I5
+  # I0 & I1 & !I3 & !I4 & !I5
+  # !I0 & !I1 & I2 & !I4 & !I5
+  # I0 & !I1 & I3 & !I4 & !I5
+  # !I0 & I1 & I3 & !I4 & !I5
+  # I0 & I1 & I2 & I3 & !I4 & !I5
+  # I0 & !I1 & !I3 & I4 & !I5
+  # !I0 & I1 & !I2 & !I3 & !I4 & I5
+  # I0 & I1 & I2 & !I3 & I4 & !I5
+  # !I0 & I2 & I4 & !I5
+  # !I2 & I3 & I4 & !I5
+
+l =>
+    !I0 & !I1 & I2 & !I3 & !I4 & I5
+  # !I3 & !I4 & !I5
+  # !I0 & I1 & !I2 & !I3 & !I4 & I5
+  # I0 & !I2 & !I3 & !I4 & I5
+  # !I0 & !I1 & I2 & I3 & I4 & !I5
+  # !I0 & I1 & !I2 & I3 & !I5
+  # !I1 & I3 & !I4 & !I5
+  # I0 & I1 & I2 & I3 & !I5
+  # !I0 & !I1 & !I3 & I4 & !I5
+  # I0 & I1 & !I2 & I4 & !I5
+  # I0 & !I1 & I2 & I4 & !I5
+  # !I0 & I1 & I2 & I4 & !I5
+  # I0 & !I1 & !I2 & I3 & I4 & !I5
+
+m =>
+    !I0 & !I1 & I2 & !I3 & !I4 & I5
+  # !I2 & !I3 & !I4 & I5
+  # I0 & !I1 & I2 & !I4 & !I5
+  # I0 & !I1 & I2 & I3 & I4 & !I5
+  # I0 & I1 & I3 & I4 & !I5
+  # I0 & I1 & !I4 & !I5
+  # !I0 & !I1 & I2 & I3 & !I4 & !I5
+  # !I1 & !I2 & !I3 & !I5
+  # I1 & !I2 & !I3 & I4 & !I5
+  # I0 & I2 & !I3 & I4 & !I5
+  # !I0 & I1 & I2 & !I5
+  # !I0 & !I2 & I3 & !I5
+
+n =>
+    !I0 & !I1 & I2 & !I3 & !I4 & I5
+  # !I2 & !I3 & !I4
+  # I0 & I1 & I2 & I3 & I4 & !I5
+  # I2 & !I4 & !I5
+  # !I0 & I2 & I3 & I4 & !I5
+  # !I2 & I3 & !I4 & !I5
+  # I0 & !I1 & I3 & I4 & !I5
+  # I1 & !I2 & !I3 & I4 & !I5
+  # !I1 & !I3 & I4 & !I5
+
+c.oe  =>
+    1 
+
+d1.oe  =>
+    1 
+
+d2.oe  =>
+    1 
+
+e.oe  =>
+    1 
+
+g1.oe  =>
+    1 
+
+l.oe  =>
+    1 
+
+m.oe  =>
+    1 
+
+n.oe  =>
+    1 
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    I0                          7        V        -       -       -     
+    I1                          6        V        -       -       -     
+    I2                          5        V        -       -       -     
+    I3                          4        V        -       -       -     
+    I4                          3        V        -       -       -     
+    I5                          2        V        -       -       -     
+    c                           21       V        11      12      1     
+    d1                          22       V        10      10      1     
+    d2                          17       V        10      14      1     
+    e                           15       V        7       10      1     
+    g1                          16       V        11      12      1     
+    l                           20       V        13      14      1     
+    m                           19       V        12      16      1     
+    n                           18       V        9       16      1     
+    c                   oe      21       D        1       1       0     
+    d1                  oe      22       D        1       1       0     
+    d2                  oe      17       D        1       1       0     
+    e                   oe      15       D        1       1       0     
+    g1                  oe      16       D        1       1       0     
+    l                   oe      20       D        1       1       0     
+    m                   oe      19       D        1       1       0     
+    n                   oe      18       D        1       1       0     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
+
+===============================================================================
+                                   Fuse Plot
+===============================================================================
+
+SP 
+ 05764 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+AR 
+ 00000 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+Pin #23  05808 Mode  xx 
+ 00044 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00088 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00132 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00176 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00220 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00264 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00308 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00352 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 00396 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #22  05810 Mode  -- 
+ 00440 -------------------------------------------- 
+ 00484 -----x---x---x---x---x---------------------- 
+ 00528 -----x---x------x---x----x------------------ 
+ 00572 -----x------x----x---x---x------------------ 
+ 00616 -----x---x--x----x--x---x------------------- 
+ 00660 -----x---x--x---x----x--x------------------- 
+ 00704 ----x----x---x---x--x----x------------------ 
+ 00748 -----x--x----x-----------x------------------ 
+ 00792 -----x--x-------x---x---x------------------- 
+ 00836 -----x--x---x----x---x--x------------------- 
+ 00880 -----x--x---x---x----x---x------------------ 
+Pin #21  05812 Mode  -- 
+ 00924 -------------------------------------------- 
+ 00968 -----x-------x---x---x---x------------------ 
+ 01012 -----x---x-------x--x---x------------------- 
+ 01056 -----x---x---x--x----x--x------------------- 
+ 01100 -----x-------x--x---x----x------------------ 
+ 01144 -----x------x----x---x--x------------------- 
+ 01188 -----x------x---x----x---x------------------ 
+ 01232 -----x--x--------x--x----x------------------ 
+ 01276 -----x--x----x--x----x---x------------------ 
+ 01320 -----x--x---x----x---x---x------------------ 
+ 01364 -----x--x---x---x----x--x------------------- 
+ 01408 ----x----x---x---x---x---x------------------ 
+ 01452 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #20  05814 Mode  -- 
+ 01496 -------------------------------------------- 
+ 01540 ----x----x---x--x----x---x------------------ 
+ 01584 -----x---x---x------------------------------ 
+ 01628 ----x----x---x---x--x----x------------------ 
+ 01672 ----x----x---x---x------x------------------- 
+ 01716 -----x--x---x---x----x---x------------------ 
+ 01760 -----x------x----x--x----x------------------ 
+ 01804 -----x---x--x--------x---------------------- 
+ 01848 -----x------x---x---x---x------------------- 
+ 01892 -----x--x----x-------x---x------------------ 
+ 01936 -----x--x--------x--x---x------------------- 
+ 01980 -----x--x-------x----x--x------------------- 
+ 02024 -----x--x-------x---x----x------------------ 
+ 02068 -----x--x---x----x---x--x------------------- 
+ 02112 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #19  05816 Mode  -- 
+ 02156 -------------------------------------------- 
+ 02200 ----x----x---x--x----x---x------------------ 
+ 02244 ----x----x---x---x-------------------------- 
+ 02288 -----x---x------x----x--x------------------- 
+ 02332 -----x--x---x---x----x--x------------------- 
+ 02376 -----x--x---x-------x---x------------------- 
+ 02420 -----x---x----------x---x------------------- 
+ 02464 -----x---x--x---x----x---x------------------ 
+ 02508 -----x-------x---x---x---------------------- 
+ 02552 -----x--x----x---x--x----------------------- 
+ 02596 -----x--x----x--x-------x------------------- 
+ 02640 -----x----------x---x----x------------------ 
+ 02684 -----x------x----x-------x------------------ 
+ 02728 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 02772 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 02816 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 02860 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #18  05818 Mode  -- 
+ 02904 -------------------------------------------- 
+ 02948 ----x----x---x--x----x---x------------------ 
+ 02992 ---------x---x---x-------------------------- 
+ 03036 -----x--x---x---x---x---x------------------- 
+ 03080 -----x---x------x--------------------------- 
+ 03124 -----x--x---x---x--------x------------------ 
+ 03168 -----x---x--x----x-------------------------- 
+ 03212 -----x--x---x--------x--x------------------- 
+ 03256 -----x--x----x---x--x----------------------- 
+ 03300 -----x--x----x-------x---------------------- 
+ 03344 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 03388 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 03432 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 03476 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 03520 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 03564 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 03608 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #17  05820 Mode  -- 
+ 03652 -------------------------------------------- 
+ 03696 -----x---x---x---x---x---------------------- 
+ 03740 -----x---x------x---x----x------------------ 
+ 03784 -----x------x----x---x---x------------------ 
+ 03828 -----x---x--x----x--x---x------------------- 
+ 03872 -----x---x--x---x----x--x------------------- 
+ 03916 ----x----x---x---x--x----x------------------ 
+ 03960 -----x--x----x-----------x------------------ 
+ 04004 -----x--x-------x---x---x------------------- 
+ 04048 -----x--x---x----x---x--x------------------- 
+ 04092 -----x--x---x---x----x---x------------------ 
+ 04136 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 04180 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 04224 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 04268 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #16  05822 Mode  -- 
+ 04312 -------------------------------------------- 
+ 04356 -----x---x---x---x-------x------------------ 
+ 04400 -----x---x---x------x---x------------------- 
+ 04444 -----x---x------x----x---x------------------ 
+ 04488 -----x---x--x--------x--x------------------- 
+ 04532 -----x---x--x-------x----x------------------ 
+ 04576 -----x---x--x---x---x---x------------------- 
+ 04620 -----x--x----x-------x--x------------------- 
+ 04664 ----x----x---x---x--x----x------------------ 
+ 04708 -----x--x----x--x---x---x------------------- 
+ 04752 -----x--x-------x--------x------------------ 
+ 04796 -----x--x---x----x-------------------------- 
+ 04840 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #15  05824 Mode  -- 
+ 04884 -------------------------------------------- 
+ 04928 ----x----x---x--x----x---x------------------ 
+ 04972 -----x-------x--x----x---x------------------ 
+ 05016 -----x------x----x---x--x------------------- 
+ 05060 -----x--x----x---x--x---x------------------- 
+ 05104 ---------x---x---x-------x------------------ 
+ 05148 -----x--x---x------------x------------------ 
+ 05192 -----x--x---x---x---x---x------------------- 
+ 05236 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 05280 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 05324 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Pin #14  05826 Mode  xx 
+ 05368 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 05412 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 05456 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 05500 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 05544 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 05588 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 05632 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 05676 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+ 05720 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+
+
+LEGEND    X : fuse not blown 
+          - : fuse blown 
+
+===============================================================================
+                                 Chip Diagram
+===============================================================================
+
+                               ______________
+                              |      16      |
+                          x---|1           24|---x Vcc                      
+                       I5 x---|2           23|---x                          
+                       I4 x---|3           22|---x d1                       
+                       I3 x---|4           21|---x c                        
+                       I2 x---|5           20|---x l                        
+                       I1 x---|6           19|---x m                        
+                       I0 x---|7           18|---x n                        
+                          x---|8           17|---x d2                       
+                          x---|9           16|---x g1                       
+                          x---|10          15|---x e                        
+                          x---|11          14|---x                          
+                      GND x---|12          13|---x                          
+                              |______________|
+

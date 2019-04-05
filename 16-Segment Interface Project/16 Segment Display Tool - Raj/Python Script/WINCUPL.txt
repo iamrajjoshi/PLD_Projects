@@ -1,0 +1,16 @@
+a1 = (!A&B&!C&D&E)#(!A&!B&!D&!E&!F)#(!A&B&!C&D&F)#(!A&!B&C&!D&E)#(!A&B&C&!D&!E)#(!A&B&D&E&F)#(!A&!B&C&!F)#(!A&!B&C&D&!E)#(!A&C&!E&!F);
+a2 = (!A&B&!C&D&E)#(!A&!B&!D&!E&!F)#(!A&B&!C&D&F)#(!A&!B&C&!D&E)#(!A&B&C&!D&!E)#(!A&B&D&E&F)#(!A&!B&C&!F)#(!A&!B&C&D&!E)#(!A&C&!E&!F);
+b = (!A&!C&D&E&!F)#(!A&!B&!D&E&F)#(!A&B&!C&D&!F)#(!A&C&!D&!E&F)#(A&!B&!C&!D&!E)#(!A&B&C&!D&!F)#(!A&!C&!D&E&F)#(!A&C&D&!E&!F)#(!A&!B&!C&D&F)#(!B&!C&!D&!E&!F);
+c = (!A&B&!E&!F)#(!B&!C&!D&!E&!F)#(!A&!B&!D&F)#(!A&!C&D&E&!F)#(!A&B&C&!E)#(!A&B&!D&!F)#(!A&!B&!C&!E&F)#(!A&C&D&!E&!F);
+d2 = (A&!B&!C&!D&E&!F)#(!A&!B&C&D&!E&F)#(!A&!B&C&!D&E&F)#(!A&B&D&E&F)#(!A&!B&!C&!D&!E)#(!A&B&C&!D&!E)#(!A&!B&D&E&!F)#(!A&!D&!E&!F)#(!A&B&!E&!F)#(!A&B&!C&!F);
+d1 = (A&!B&!C&!D&E&!F)#(!A&!B&C&D&!E&F)#(!A&!B&C&!D&E&F)#(!A&B&C&!D&!E)#(!A&B&D&E&F)#(!A&!D&!E&!F)#(!A&!B&D&E&!F)#(!A&B&!C&!F)#(!A&B&!E&!F);
+e = (!A&!C&D&!E&!F)#(!A&B&C&D&E)#(!B&!C&!E&!F)#(!B&!C&!D&!F)#(!A&B&!C&!D&E&F)#(!A&C&!D&!E&F)#(!A&B&C&!F);
+f = (!A&C&!D&E&!F)#(!A&!B&!C&!E&!F)#(!A&!C&D&!E&!F)#(!B&!C&!D&E&!F)#(!A&B&C&!E)#(!A&C&!D&!E&F)#(!A&B&C&!F);
+g1 = (!A&B&!D&!E&F)#(!A&C&D&!F)#(!A&C&!D&!E&F)#(!A&!B&!C&E&F)#(!A&!B&!C&!E&!F)#(!A&C&E&!F)#(!A&B&!C&D)#(!A&!B&C&D)#(!B&!C&!D&E&!F)#(!A&B&C&!D);
+g2 = (!A&!D&!E&F)#(!A&!C&D&!F)#(!A&!B&C&F)#(!A&D&!E&!F)#(!A&!B&!C&!E&!F)#(!A&B&C&!D)#(!A&!B&C&E)#(A&!B&!C&!D&!F)#(!A&B&!C&D)#(!A&!B&!D&F);
+h = (!A&D&!E&!F)#(!A&!D&E)#(!B&!C&!E&!F)#(!B&!C&!D)#(!A&B&D)#(!A&E&F)#(!A&!B&!D)#(!A&!C);
+j = (!A&E&F)#(!B&!C&!D&!E)#(!A&!B&C&!F)#(!A&D&F)#(!A&B&!D)#(A&!B&!C&!E&!F)#(A&!B&!C&!D)#(!A&D&E);
+k = (!A&D&E&F)#(!A&!C&!E)#(!A&B&C&D)#(!B&!C&!D)#(!B&!C&!E&!F)#(!A&!B&!F)#(!A&!B&!D&!E)#(!A&!C&!D);
+l = (!A&!C&!D&E&F)#(!A&!C&D&!F)#(!A&!B&!D&!F)#(!A&C&!E&F)#(!A&!B&D&F)#(!A&B&C&E)#(!B&!C&!D&E)#(!B&!C&D&!E&!F)#(!B&!C&!D&F)#(!A&D&!E)#(!A&!C&!E&!F);
+m = (!A&!B&C&!F)#(!A&E&F)#(!A&!C&!D&!E)#(!A&B&!D&!F)#(A&!B&!C&!E&!F)#(A&!B&!C&!D)#(!A&D&F)#(!A&D&E);
+n = (!A&D&!E)#(!B&!C&!D)#(!B&!C&!E&!F)#(!A&C&D)#(!A&!E&F)#(!A&!C&!D)#(!A&!B);
